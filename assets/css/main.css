@@ -2163,16 +2163,19 @@
 			}
 
 			#nav ul {
-				text-align: right;
 				margin: 1em 0 1em 0;
+			}
+
+			#nav ul.active {
+				text-align: right;
+			}
+
+			#nav ul li:last-child {
+				margin-right: 1em;
 			}
 
 			a.logo {
 				margin: 1em 0 0 1em !important;
-			}
-
-			#menu-bar li:last-child {
-				margin-right: 1em;
 			}
 
 		/* Articles */
