@@ -2162,8 +2162,17 @@
 				padding: 0.5em;
 			}
 
+			#nav ul {
+				text-align: right;
+				margin: 1em 0 1em 0;
+			}
+
 			a.logo {
-				margin: 0 0 0 0 !important;
+				margin: 1em 0 0 1em !important;
+			}
+
+			#menu-bar li:last-child {
+				margin-right: 1em;
 			}
 
 		/* Articles */
