@@ -2170,7 +2170,7 @@
 				text-align: right;
 			}
 
-			#nav ul li:last-child {
+			#nav ul.active li:last-child {
 				margin-right: 1em;
 			}
 
