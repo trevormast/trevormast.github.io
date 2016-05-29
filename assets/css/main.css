@@ -68,7 +68,7 @@
 	}
 
 	#intro {
-		background-color: rgba(999, 999, 999, .7);
+		background-color: rgba(999, 999, 999, .9);
 		border-radius: 8px;
 		position: relative;
 	}
@@ -1724,7 +1724,6 @@
 				margin-left: -0.75em;
 				border-left: solid 0.75em transparent;
 				border-right: solid 0.75em transparent;
-				border-top: solid 0.6em #282828;
 			}
 
 			a.logo {
