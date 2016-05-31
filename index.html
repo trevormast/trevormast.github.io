@@ -17,7 +17,6 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
-
 		<!-- Nav -->
 			<nav id="nav">
 				<a href="#top" class="logo">Trevor Mast</a>
@@ -30,7 +29,7 @@
 			</nav>
 
 		<!-- Home -->
-			<div class="wrapper style1 first" id="hello">
+			<div class="wrapper style1 first">
 				<div class="overlay"></div>
 				<article class="container" id="top">
 					<div class="row">
@@ -56,12 +55,12 @@
 
 		<!-- Work -->
 			<div class="wrapper style2">
-				<article id="work">
+				<article>
 					<header>
 						<h2>I'm a Full-Stack Engineer.</h2>
 						<p>From user interfaces to database configuration, I do it all.</p>
 					</header>
-					<div class="container">
+					<div class="container" id="work">
 						<div class="row">
 							<div class="4u 12u(mobile)">
 								<section class="box style1">
@@ -95,36 +94,46 @@
 		<!-- Portfolio -->
 			<!-- image size: 866 x 640 -->
 			<div class="wrapper style3">
-				<article id="portfolio">
+				<article>
 					<header>
 						<h2>Here’s what I've been working on recently.</h2>
-						<p></p>
 					</header>
-					<div class="container">
-						<div class="row">
+					<div class="container" id="portfolio">
 						<!--JEKYLL.PIZZA-->
+						<div class="row" id="jekyllPizza">
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
 									<a href="http://fresh.jekyll.pizza" class="image featured"><img src="images/jekyll_pizza.jpg" alt="" /></a>
-									<h3><a href="http://fresh.jekyll.pizza">Jekyll.Pizza</a></h3>
-									<p>A Sinatra app that lets you create and host Jekyll blogs on the fly.</p>
 								</article>
 							</div>
+							<div class="8u 12u(mobile) description-right">
+								<h3><a href="http://fresh.jekyll.pizza">Jekyll.Pizza</a></h3>
+									<p>A Sinatra app that lets you create and host Jekyll blogs on the fly.</p>
+							</div>
+						</div>
 							<!--FUGACIOUS-->
+						<div class="row" id="fugacious">
+							<div class="8u 12u(mobile) description-left">
+								<h3><a href="http://fugacio.us/">Fugacious</a></h3>
+									<p>A Rails app that lets you send sensitive information securely.</p>
+							</div>
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
 									<a href="http://fugacio.us/" class="image featured"><img src="images/fugacious.png" alt="" /></a>
-									<h3><a href="http://fugacio.us/">Fugacious</a></h3>
-									<p>A Rails app that lets you send sensitive information securely.</p>
+
 								</article>
 							</div>
+						</div>
 							<!-- -->
+						<div class="row" id="other">
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
 									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Lorem ipsum</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
 								</article>
+							</div>
+							<div class="8u 12u(mobile) description-right">
+								<h3><a href="#">Lorem ipsum</a></h3>
+								<p>Ornare nulla proin odio consequat.</p>
 							</div>
 						</div>
 					</div>
@@ -169,6 +178,7 @@
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/skel-viewport.min.js"></script>
 			<script src="assets/js/util.js"></script>
@@ -176,7 +186,8 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/header.js"></script>
 			<script src="assets/js/nav.js"></script>
-			<script src="assets/js/lightsout.js"></script>
+			<script src="assets/js/portfolio_scroll.js"></script>
+			<!-- <script src="assets/js/lightsout.js"></script> -->
 
 	</body>
 </html>

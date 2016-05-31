@@ -1,27 +1,43 @@
-var previousScroll = 0
 
-$(window).scroll(function() {
-  var currentScroll = $(this).scrollTop();
-  var opacityAmount = 0.0125
+var overlay = $('div.overlay');
 
-  // if scrolling within first div
-  if ($(window).scrollTop() < (topofDiv + height)){
-    // downscroll
-    if (currentScroll > previousScroll){
-      if ($('.overlay').css('opacity') <= 0.75){
-        $('.overlay').css({ opacity : "+=" + opacityAmount + 'px'});
-      }
-    }
-    // upscroll
-    else {
-      if ($(window).scrollTop() <= topofDiv){
-        $('.overlay').css({opacity: 0})
+
+var previousScroll = 0;
+fadingIn = false;
+fadingOut = false;
+
+$(document).ready(function(){
+
+  $(window).scroll(function() {
+    var currentScroll = $(this).scrollTop();
+    var fadeDuration = 500
+
+    // if scrolling within first div
+    if ($(window).scrollTop() < (topofDiv + height)){
+      // downscroll
+      if (currentScroll > previousScroll){
+        if ($(window).scrollTop() > (topofDiv + (height/2))){
+          if (!fadingIn){
+            overlay.fadeTo(fadeDuration, 0.125, function(){
+              fadingIn = false;
+            });
+            fadingIn = true;
+          }
         }
-
-      if ($('.overlay').css('opacity') > 0 ){
-        $('.overlay').css({ opacity : "-=" + opacityAmount + 'px'});
+      }
+      // upscroll
+      else {
+        if(!fadingOut){
+          overlay.fadeTo(fadeDuration, 1, function(){
+            fadingOut = false;
+          });
+          fadingOut = true;
+        }
       }
     }
-  previousScroll = currentScroll
-  }
+    previousScroll = currentScroll;
+  });
 });
+
+
+
