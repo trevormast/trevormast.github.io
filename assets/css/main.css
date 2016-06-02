@@ -1630,7 +1630,7 @@
 		}
 
 		.icon.featured {
-			color: #EA8A95;
+			color: #000000;
 			display: block;
 			margin: 0 0 1.5em 0;
 			cursor: default;
@@ -1677,6 +1677,7 @@
 			color: black;
 		}
 
+
 	/*	.wrapper.style2 .overlay {
 			opacity: 0;
 			z-index: -2;
@@ -1713,12 +1714,13 @@
 			background-color: black;
 		}
 
-		.wrapper.style3 h2{
+	/*	.wrapper.style3 h2{
 			margin-bottom: 2em;
-		}
+		}*/
 
-		.wrapper.style3 p, .wrapper.style3 h1, .wrapper.style3 h2, .wrapper.style3 h3 {
+		.wrapper.style3 p, .wrapper.style3 strong, .wrapper.style3 h1, .wrapper.style3 h2, .wrapper.style3 h3, .wrapper.style3 h4 {
 			color: white;
+			margin-bottom: 0.5em;
 		}
 
 		.wrapper.style3 a {
