@@ -1723,6 +1723,10 @@
 			margin-bottom: 0.5em;
 		}
 
+		.wrapper.style3 h2 {
+			margin-bottom: 2em;
+		}
+
 		.wrapper.style3 a {
 			color: #43bff0;
 		}
