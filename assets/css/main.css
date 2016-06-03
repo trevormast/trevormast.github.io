@@ -1357,6 +1357,7 @@
 
 		.image.featured#me-photo {
 			border-radius: 15px;
+			height: 100%;
 		}
 
 		.image.featured img {
@@ -1453,6 +1454,10 @@
 			.button.alt:active {
 				background-color: #3f3f3f;
 			}
+
+	.button.margin-top {
+		margin-top: 3.5em;
+	}
 
 /* List */
 
@@ -1772,6 +1777,18 @@
 					background: #252525;
 				}
 
+		.description-right .bubble {
+			background: #282828;
+			border-radius: 15px;
+		}
+
+			.description-right .bubble p {
+				padding: 0.5em;
+			}
+
+				.bubble#description {
+					height: 81%;
+				}
 /* Nav */
 
 	#nav {
