@@ -74,13 +74,7 @@
 	}
 
 	#intro {
-		background-color: rgba(999, 999, 999, .9);
-		border-radius: 8px;
 		position: relative;
-	}
-
-	#intro p {
-		color: #3e3e3e;
 	}
 
 	.container.\31 25\25 {
@@ -1694,7 +1688,7 @@
 
 		div.overlay {
 		  content: "";
-			background: url("../../images/bg.jpg");
+			background: url("../../images/bg-dark.jpg");
 			background-size: 100% 100%;
 			background-attachment: fixed;
 			opacity: 1;
@@ -1707,7 +1701,7 @@
 		}
 		div.style2::after {
 		  content: "";
-			background: url("../../images/bg.jpg");
+			background: url("../../images/bg-dark.jpg");
 			background-size: 100% 100%;
 			background-attachment: fixed;
 		  opacity: 0.125;
@@ -1926,7 +1920,9 @@
 			}
 
 			#intro-name {
-				opacity: 0;
+				color: #FFFFFF;
+				text-shadow: 1px 1px 8px #000000;
+				opacity: 1;
 				-moz-transition: opacity 2s ease-in-out, visibility 2s;
 		    -webkit-transition: opacity 2s ease-in-out, visibility 2s;
 		    -ms-transition: opacity 2s ease-in-out, visibility 2s;
@@ -1938,7 +1934,9 @@
 			}
 
 			#intro-desc {
-				opacity: 0;
+				color: #FFFFFF;
+				text-shadow: 1px 1px 8px #000000;
+				opacity: 1;
 				-moz-transition: opacity 1s ease-in-out 0.5s, visibility 1s;
 		    -webkit-transition: opacity 1s ease-in-out 0.5s, visibility 1s;
 		    -ms-transition: opacity 1s ease-in-out 0.5s, visibility 1s;
