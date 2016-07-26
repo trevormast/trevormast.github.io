@@ -1489,15 +1489,15 @@
 			}
 
 				ul.social li a:before {
-					background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+					/*background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 					background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 					background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 					background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 					-moz-transition: background-color .2s ease-in-out;
 					-webkit-transition: background-color .2s ease-in-out;
 					-ms-transition: background-color .2s ease-in-out;
-					transition: background-color .2s ease-in-out;
-					background-color: #444;
+					transition: background-color .2s ease-in-out;*/
+					/*background-color: #444;*/
 					border-radius: 6px;
 					/*box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);*/
 					color: #2E2E2E !important;
@@ -1680,6 +1680,9 @@
 			color: black;
 		}
 
+		.fugpic-mobile {
+			display: none;
+		}
 
 	/*	.wrapper.style2 .overlay {
 			opacity: 0;
@@ -1704,7 +1707,7 @@
 			background: url("../../images/bg-dark.jpg");
 			background-size: 100% 100%;
 			background-attachment: fixed;
-		  opacity: 0.125;
+		  opacity: 0.35;
 		  top: 0;
 		  left: 0;
 		  bottom: 0;
@@ -1921,7 +1924,6 @@
 
 			#intro-name {
 				color: #FFFFFF;
-				text-shadow: 1px 1px 8px #000000;
 				opacity: 1;
 				-moz-transition: opacity 2s ease-in-out, visibility 2s;
 		    -webkit-transition: opacity 2s ease-in-out, visibility 2s;
@@ -1935,7 +1937,6 @@
 
 			#intro-desc {
 				color: #FFFFFF;
-				text-shadow: 1px 1px 8px #000000;
 				opacity: 1;
 				-moz-transition: opacity 1s ease-in-out 0.5s, visibility 1s;
 		    -webkit-transition: opacity 1s ease-in-out 0.5s, visibility 1s;
@@ -2146,8 +2147,66 @@
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
+		div.overlay {
+			background: #000000;
+		}
+
+		div.style2::after {
+			background: #DDDDDD;
+		}
+
+		article.box.style2 {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+
+		.description-left, .description-right {
+			margin-top: 0;
+		}
+		.fugpic {
+			display: none;
+		}
+
+		.fugpic-mobile {
+			display: block;
+		}
+
+		.image.featured.portfolio img {
+			vertical-align: top;
+		}
+
+		.description-left {
+			order: 2;
+		}
+
+		.fugpic {
+			order: 1;
+		}
+
+		#intro-name {
+				color: #FFFFFF;
+				text-shadow: 1px 1px 8px #000000;
+				opacity: 1;
+			}
+
+			#intro-name.active {
+				opacity: 1;
+			}
+
+			#intro-desc {
+				color: #FFFFFF;
+				text-shadow: 1px 1px 8px #000000;
+				opacity: 1;
+			}
+
+			#intro-desc.active {
+				opacity: 1;
+			}
 
 		/* Basic */
+			header h2 {
+				font-size: 1.5em;
+			}
 
 			body, input, textarea, select {
 				line-height: 1.75em;
