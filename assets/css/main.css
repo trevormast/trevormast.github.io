@@ -2160,8 +2160,13 @@
 			margin-bottom: 0;
 		}
 
-		.description-left, .description-right {
-			margin-top: 0;
+		div .description {
+			padding-top: 0;
+			margin-bottom: 30px;
+		}
+
+		div .project-header {
+			margin-bottom: 0.15em;
 		}
 		.fugpic {
 			display: none;
