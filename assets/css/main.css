@@ -2160,6 +2160,71 @@
 			margin-bottom: 0;
 		}
 
+		div .description {
+			padding-top: 0;
+			margin-bottom: 30px;
+		}
+
+		div .project-header {
+			margin-bottom: 0.15em;
+		}
+		.fugpic {
+			display: none;
+		}
+
+		.fugpic-mobile {
+			display: block;
+		}
+
+		.image.featured.portfolio img {
+			vertical-align: top;
+		}
+
+		.description-left {
+			order: 2;
+		}
+
+		.fugpic {
+			order: 1;
+		}
+
+		#intro-name {
+				color: #FFFFFF;
+				text-shadow: 1px 1px 8px #000000;
+				opacity: 1;
+			}
+
+			#intro-name.active {
+				opacity: 1;
+			}
+
+			#intro-desc {
+				color: #FFFFFF;
+				text-shadow: 1px 1px 8px #000000;
+				opacity: 1;
+			}
+
+			#intro-desc.active {
+				opacity: 1;
+			}
+
+		body{
+    	-webkit-text-size-adjust: none;
+  	}
+
+		div.overlay {
+			background: #000000;
+		}
+
+		div.style2::after {
+			background: #DDDDDD;
+		}
+
+		article.box.style2 {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+
 		.description-left, .description-right {
 			margin-top: 0;
 		}
