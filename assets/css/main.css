@@ -1680,7 +1680,7 @@
 			color: black;
 		}
 
-		.fugpic-mobile {
+		.portfolio-pic-mobile {
 			display: none;
 		}
 
@@ -2228,11 +2228,11 @@
 		.description-left, .description-right {
 			margin-top: 0;
 		}
-		.fugpic {
+		.portfolio-pic {
 			display: none;
 		}
 
-		.fugpic-mobile {
+		.portfolio-pic-mobile {
 			display: block;
 		}
 
@@ -2244,7 +2244,7 @@
 			order: 2;
 		}
 
-		.fugpic {
+		.portfolio-pic {
 			order: 1;
 		}
 
