@@ -1667,13 +1667,15 @@
 		}
 
 		.wrapper.style1 {
-			background-image: none;
-			background-color: transparent;
+			min-height: 100vh;
+			background: url("../../images/bg-dark.jpg");
+			background-size: 100% 100%;
+			background-attachment: fixed;
 		}
 
 		.wrapper.style2 {
 			position: relative;
-			background-color: transparent;
+			background-color: white;
 		}
 
 		.wrapper.style2 p, .wrapper.style2 h2, .wrapper.style2 h3{
@@ -1689,11 +1691,9 @@
 			z-index: -2;
 		}*/
 
-		div.overlay {
+		/*div.overlay {
 		  content: "";
-			background: url("../../images/bg-dark.jpg");
-			background-size: 100% 100%;
-			background-attachment: fixed;
+
 			opacity: 1;
 		  top: 0;
 		  left: 0;
@@ -1701,8 +1701,8 @@
 		  right: 0;
 		  position: absolute;
 		  z-index: -1;
-		}
-		div.style2::after {
+		}*/
+		/*div.style2::after {
 		  content: "";
 			background: url("../../images/bg-dark.jpg");
 			background-size: 100% 100%;
@@ -1714,7 +1714,7 @@
 		  right: 0;
 		  position: absolute;
 		  z-index: -1;
-		}
+		}*/
 
 		.wrapper.style3 {
 			background-color: black;
@@ -1741,7 +1741,10 @@
 		}
 
 		.wrapper.style3.aboutme {
-			background: #383838;
+			background: url('../../images/desert-plant-edit.jpg');
+			background-size: 100% 100%;
+			background-attachment: fixed;
+
 		}
 
 		.container#about-me p {
@@ -1750,8 +1753,9 @@
 		}
 
 		.wrapper.style4 {
-			background-color: #303030;
+			background-color: #000;
 			color: #999;
+			padding-bottom: 1.0em;
 		}
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
@@ -1771,19 +1775,6 @@
 				.wrapper.style4 form select:focus,
 				.wrapper.style4 form textarea:focus {
 					background: #252525;
-				}
-
-		.description-right .bubble {
-			background: #282828;
-			border-radius: 15px;
-		}
-
-			.description-right .bubble p {
-				padding: 0.5em;
-			}
-
-				.bubble#description {
-					height: 81%;
 				}
 
 		.project-header {
@@ -2147,12 +2138,21 @@
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
-		div.overlay {
+		.wrapper.style1 {
 			background: #000000;
 		}
 
-		div.style2::after {
+		.wrapper.style2 {
 			background: #DDDDDD;
+		}
+
+		.wrapper.style3.aboutme{
+			background: #4A4A4A;
+		}
+
+		section.box.style1 {
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 
 		article.box.style2 {
