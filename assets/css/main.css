@@ -1676,6 +1676,7 @@
 		.wrapper.style2 {
 			position: relative;
 			background-color: white;
+			padding-bottom: 0;
 		}
 
 		.wrapper.style2 p, .wrapper.style2 h2, .wrapper.style2 h3{
@@ -1718,11 +1719,12 @@
 
 		.wrapper.style3 {
 			background-color: black;
+			padding-bottom: 0;
 		}
 
-	/*	.wrapper.style3 h2{
+/*  .wrapper.style3 h2{
 			margin-bottom: 2em;
-		}*/
+		}  */
 
 		.wrapper.style3 p, .wrapper.style3 strong,
 		 .wrapper.style3 h1, .wrapper.style3 h2,
@@ -1733,7 +1735,7 @@
 		}
 
 		.wrapper.style3 h2 {
-			margin-bottom: 2em;
+			margin-bottom: 4em;
 		}
 
 		.wrapper.style3 a, i {
@@ -1744,6 +1746,7 @@
 			background: url('../../images/desert-plant-edit.jpg');
 			background-size: 100% 100%;
 			background-attachment: fixed;
+			padding-bottom: 4em;
 
 		}
 
@@ -1948,6 +1951,12 @@
 				margin: 0 0 0 0;
 			}
 
+			footer#work-footer,
+			footer#portfolio-footer,
+			footer#about-footer {
+				display: none;
+			}
+
 				footer > p {
 					font-size: 1.25em;
 				}
@@ -2142,12 +2151,22 @@
 			background: #000000;
 		}
 
+		.wrapper.style2, .wrapper.style3 {
+			padding-bottom: 4em;
+		}
+
 		.wrapper.style2 {
 			background: #DDDDDD;
 		}
 
 		.wrapper.style3.aboutme{
 			background: #4A4A4A;
+		}
+
+		footer#work-footer,
+		footer#portfolio-footer,
+		footer#about-footer {
+			display: block;
 		}
 
 		section.box.style1 {
